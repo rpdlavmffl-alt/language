@@ -1,6 +1,6 @@
 const questions = [
   {
-    category: "01 · EXPERIENCE",
+    category: "01 · 경험",
     title: "프로그래밍 경험이 어느 정도인가요?",
     description: "현재 자신의 경험과 가장 가까운 항목을 골라 주세요.",
     options: [
@@ -11,22 +11,22 @@ const questions = [
     ]
   },
   {
-    category: "02 · GOAL",
+    category: "02 · 목표",
     title: "무엇을 만들어 보고 싶나요?",
     description: "가장 흥미로운 목표 하나를 선택해 주세요.",
     options: [
       { text: "인공지능, 챗봇, 데이터 분석", scores: { Python: 5, R: 2 } },
-      { text: "웹사이트나 웹 서비스", scores: { JavaScript: 5, TypeScript: 3, Python: 1 } },
+      { text: "웹사이트", scores: { JavaScript: 5, TypeScript: 3, Python: 1 } },
       { text: "게임", scores: { CSharp: 4, Cpp: 3, JavaScript: 1 } },
-      { text: "모바일 앱", scores: { Kotlin: 4, Swift: 4, Java: 2 } },
-      { text: "컴퓨터 작업 자동화나 작은 도구", scores: { Python: 4, JavaScript: 1 } },
+      { text: "모바일 어플", scores: { Kotlin: 4, Swift: 4, Java: 2 } },
+      { text: "컴퓨터 작업 자동화나 작은 프로그램", scores: { Python: 4, JavaScript: 1 } },
       { text: "운영체제나 고성능 프로그램", scores: { Cpp: 5, Rust: 4, C: 3 } }
     ]
   },
   {
-    category: "03 · INTEREST",
+    category: "03 · 관심분야",
     title: "어떤 분야가 가장 끌리나요?",
-    description: "아직 잘 모르겠다면 가장 궁금한 분야를 선택해도 좋아요.",
+    description: "아직 잘 모르겠다면 가장 궁금한 분야를 선택해도 좋습니다.",
     options: [
       { text: "AI와 머신러닝", scores: { Python: 5, R: 1 } },
       { text: "웹 디자인과 웹 기능", scores: { JavaScript: 4, TypeScript: 3 } },
@@ -37,66 +37,66 @@ const questions = [
     ]
   },
   {
-    category: "04 · LEARNING",
-    title: "처음 배울 때 무엇이 가장 중요하나요?",
+    category: "04 · 학습순서",
+    title: "처음 배울 때 무엇을 가장 중요하게 생각하나요?",
     description: "학습할 때 중요하게 생각하는 기준을 골라 주세요.",
     options: [
-      { text: "문법이 비교적 쉽고 시작하기 편한 것", scores: { Python: 4, JavaScript: 2 } },
+      { text: "비교적 쉽고 시작하기 편한 것", scores: { Python: 4, JavaScript: 2 } },
       { text: "배운 내용을 바로 눈으로 확인하는 것", scores: { JavaScript: 3, Python: 2, Scratch: 3 } },
       { text: "기초부터 체계적으로 이해하는 것", scores: { Java: 3, C: 2, Python: 1 } },
       { text: "어렵더라도 세부 원리를 깊게 배우는 것", scores: { Cpp: 3, Rust: 3, C: 2 } }
     ]
   },
   {
-    category: "05 · PROJECT",
+    category: "05 · 결과",
     title: "어떤 결과물을 더 선호하나요?",
     description: "완성했을 때 가장 뿌듯할 것 같은 것을 골라 주세요.",
     options: [
-      { text: "브라우저에서 작동하는 웹페이지", scores: { JavaScript: 4, TypeScript: 2 } },
-      { text: "데이터를 분석하거나 예측하는 프로그램", scores: { Python: 4, R: 2 } },
-      { text: "게임이나 인터랙티브 콘텐츠", scores: { CSharp: 4, Cpp: 2, JavaScript: 1 } },
-      { text: "스마트폰에서 실행되는 앱", scores: { Kotlin: 3, Swift: 3, Java: 1 } },
-      { text: "빠르고 안정적인 시스템 프로그램", scores: { Rust: 4, Cpp: 4, C: 3 } }
+      { text: "내가 직접 만든 웹사이트", scores: { JavaScript: 4, TypeScript: 2 } },
+      { text: "내가 직접만든 예측, 계산 등 프로그램", scores: { Python: 4, R: 2 } },
+      { text: "게임과 같은 컨텐츠", scores: { CSharp: 4, Cpp: 2, JavaScript: 1 } },
+      { text: "나의 스마트폰에서 실행되는 어플", scores: { Kotlin: 3, Swift: 3, Java: 1 } },
+      { text: "도우미 시스템 프로그램", scores: { Rust: 4, Cpp: 4, C: 3 } }
     ]
   },
   {
-    category: "06 · ENVIRONMENT",
+    category: "06 · 개발환경",
     title: "주로 어디에서 프로그램을 사용하고 싶나요?",
     description: "가장 자주 사용할 것 같은 환경을 선택해 주세요.",
     options: [
-      { text: "웹 브라우저", scores: { JavaScript: 4, TypeScript: 2 } },
-      { text: "Windows 또는 여러 데스크톱 환경", scores: { Python: 2, CSharp: 3, Java: 2 } },
-      { text: "Android 스마트폰", scores: { Kotlin: 4, Java: 2 } },
-      { text: "iPhone 또는 iPad", scores: { Swift: 5 } },
-      { text: "환경은 상관없어요", scores: { Python: 2, Java: 2, JavaScript: 1 } }
+      { text: "웹 브라우저(구글, 마이크로소프트 엣지 등등)", scores: { JavaScript: 4, TypeScript: 2 } },
+      { text: "컴퓨터나 노트북", scores: { Python: 2, CSharp: 3, Java: 2 } },
+      { text: "스마트폰(안드로이드)", scores: { Kotlin: 4, Java: 2 } },
+      { text: "아이폰이나 아이패드", scores: { Swift: 5 } },
+      { text: "노상관", scores: { Python: 2, Java: 2, JavaScript: 1 } }
     ]
   },
   {
-    category: "07 · PRIORITY",
+    category: "07 · 학습목표",
     title: "언어를 배워서 얻고 싶은 것은 무엇인가요?",
     description: "가장 중요한 목적 하나를 골라 주세요.",
     options: [
       { text: "학교 과제나 개인 프로젝트", scores: { Python: 3, JavaScript: 2, Java: 1 } },
       { text: "취업이나 실무에서 활용하기", scores: { JavaScript: 2, TypeScript: 2, Python: 2, Java: 2, SQL: 2 } },
       { text: "창업이나 서비스 만들기", scores: { JavaScript: 3, TypeScript: 2, Python: 2 } },
-      { text: "컴퓨터 과학과 프로그래밍 원리 이해", scores: { C: 3, Cpp: 3, Java: 2, Rust: 2 } },
+      { text: "컴퓨터 과학과 프로그래밍 이해", scores: { C: 3, Cpp: 3, Java: 2, Rust: 2 } },
       { text: "취미로 재미있는 것을 만들기", scores: { Python: 2, JavaScript: 2, CSharp: 2 } }
     ]
   },
   {
-    category: "08 · WORK STYLE",
+    category: "08 · 작업방식",
     title: "어떤 작업 방식이 더 마음에 드나요?",
     description: "평소 선호하는 방식에 가까운 것을 골라 주세요.",
     options: [
-      { text: "짧은 코드로 빠르게 결과를 만들기", scores: { Python: 4, JavaScript: 2 } },
-      { text: "화면과 사용자의 상호작용 만들기", scores: { JavaScript: 4, TypeScript: 2 } },
-      { text: "규칙과 구조를 정해 큰 프로그램 만들기", scores: { Java: 3, CSharp: 2, TypeScript: 2 } },
+      { text: "짧고 빠르게 결과를 만들기", scores: { Python: 4, JavaScript: 2 } },
+      { text: "화면속 인터페이스를 이용한 상호작용 오브젝트 만들기", scores: { JavaScript: 4, TypeScript: 2 } },
+      { text: "큰 프로그램 만들기", scores: { Java: 3, CSharp: 2, TypeScript: 2 } },
       { text: "성능과 메모리 같은 세부 사항 다루기", scores: { Cpp: 4, Rust: 4, C: 3 } },
       { text: "데이터를 정리하고 의미를 찾기", scores: { Python: 3, R: 3, SQL: 3 } }
     ]
   },
   {
-    category: "09 · NEXT STEP",
+    category: "09 · 지금 끌리는 것",
     title: "지금 가장 배우고 싶은 것은 무엇인가요?",
     description: "마지막 질문이에요. 앞으로의 학습 방향을 골라 주세요.",
     options: [
