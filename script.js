@@ -242,7 +242,7 @@ function showResults() {
     const left = document.createElement("div");
     const rank = document.createElement("div");
     rank.className = "rank";
-    rank.textContent = index === 0 ? "BEST MATCH · 1위" : `${index + 1}위 추천`;
+    rank.textContent = index === 0 ? "종결 짝꿍 1위" : `${index + 1}위 추천`;
     const name = document.createElement("div");
     name.className = "language-name";
     name.textContent = item.info.name;
