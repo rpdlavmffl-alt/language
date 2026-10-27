@@ -165,7 +165,7 @@ backBtn.addEventListener("click", () => {
 });
 document.querySelector("#restart-btn").addEventListener("click", restart);
 document.querySelector("#copy-btn").addEventListener("click", async () => {
-  const text = "CodeCompass 추천 결과\n" + finalResults.map((r, i) => `${i + 1}. ${r.info.name} — ${r.info.tagline}`).join("\n");
+  const text = " 추천 결과\n" + finalResults.map((r, i) => `${i + 1}. ${r.info.name} — ${r.info.tagline}`).join("\n");
   const btn = document.querySelector("#copy-btn");
   try {
     await navigator.clipboard.writeText(text);
