@@ -1,6 +1,6 @@
 const questions = [
   {
-    category: "01 · 경험",
+    category: "첫번째 질문 · 경험",
     title: "프로그래밍 경험이 어느 정도인가요?",
     description: "현재 자신의 경험과 가장 가까운 항목을 골라 주세요.",
     options: [
@@ -11,7 +11,7 @@ const questions = [
     ]
   },
   {
-    category: "02 · 목표",
+    category: "두번째 질문 · 목표",
     title: "무엇을 만들어 보고 싶나요?",
     description: "가장 흥미로운 목표 하나를 선택해 주세요.",
     options: [
@@ -24,7 +24,7 @@ const questions = [
     ]
   },
   {
-    category: "03 · 관심분야",
+    category: "세번째 질문 · 관심분야",
     title: "어떤 분야가 가장 끌리나요?",
     description: "아직 잘 모르겠다면 가장 궁금한 분야를 선택해도 좋습니다.",
     options: [
@@ -37,7 +37,7 @@ const questions = [
     ]
   },
   {
-    category: "04 · 학습순서",
+    category: "네번째 질문 · 학습순서",
     title: "처음 배울 때 무엇을 가장 중요하게 생각하나요?",
     description: "학습할 때 중요하게 생각하는 기준을 골라 주세요.",
     options: [
@@ -48,7 +48,7 @@ const questions = [
     ]
   },
   {
-    category: "05 · 결과",
+    category: "다섯번째 질문 · 결과",
     title: "어떤 결과물을 더 선호하나요?",
     description: "완성했을 때 가장 뿌듯할 것 같은 것을 골라 주세요.",
     options: [
@@ -60,8 +60,8 @@ const questions = [
     ]
   },
   {
-    category: "06 · 개발환경",
-    title: "주로 어디에서 프로그램을 사용하고 싶나요?",
+    category: "여섯번째 질문 · 개발환경",
+    title: "주로 어떤 기기에서 개발을 하고싶나요?",
     description: "가장 자주 사용할 것 같은 환경을 선택해 주세요.",
     options: [
       { text: "웹 브라우저(구글, 마이크로소프트 엣지 등등)", scores: { JavaScript: 4, TypeScript: 2 } },
@@ -72,7 +72,7 @@ const questions = [
     ]
   },
   {
-    category: "07 · 학습목표",
+    category: "일곱번째 질문 · 학습목표",
     title: "언어를 배워서 얻고 싶은 것은 무엇인가요?",
     description: "가장 중요한 목적 하나를 골라 주세요.",
     options: [
@@ -84,7 +84,7 @@ const questions = [
     ]
   },
   {
-    category: "08 · 작업방식",
+    category: "여덟번째 질문 · 작업방식",
     title: "어떤 작업 방식이 더 마음에 드나요?",
     description: "평소 선호하는 방식에 가까운 것을 골라 주세요.",
     options: [
@@ -96,7 +96,7 @@ const questions = [
     ]
   },
   {
-    category: "09 · 지금 끌리는 것",
+    category: "마지막 질문 · 지금 끌리는 것",
     title: "지금 가장 배우고 싶은 것은 무엇인가요?",
     description: "마지막 질문이에요. 앞으로의 학습 방향을 골라 주세요.",
     options: [
